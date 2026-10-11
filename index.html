@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italok</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-light">
+    <main class="container py-5">
+        <h1 class="mb-4">Italok</h1>
+        <div class="row g-4">
+            <section class="col-lg-7" aria-label="italok-lista">
+                <div class="card shadow-sm"> 
+                    <div class="card-body">
+                        <h2 id="drinks-list" class="h4 mb-3">Italok listája</h2>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Név</th>
+                                        <th scope="col">Ár</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="drinks-table-body">
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+            </section>
+            <section class="col-lg-5" aria-label="ital-hozzaadas">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 id="add-drink" class="h4 mb-3">Új ital hozzáadása</h2>
+                        <form id="drink-form">
+                            <div class="mb-3">
+                                <label for="drink-name" class="form-label">Név</label>
+                                <input type="text" class="form-control" id="drink-name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="drink-price" class="form-label">Ár</label>
+                                <input type="number" class="form-control" id="drink-price" required>
+                            </div>
+                            <button id="add-drink-btn" type="submit" class="btn btn-primary">Hozzáadás</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+    </main>
+
+</body>
+</html>
